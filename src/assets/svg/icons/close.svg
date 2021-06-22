@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="56" viewBox="0 0 61 56">
+    <defs>
+        <filter id="Rectángulo_6" width="61" height="56" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="14" dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#707070"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:none;stroke:#707070;stroke-width:2px;opacity:.65}
+        </style>
+    </defs>
+    <g id="X-cerrar" transform="translate(0 6)">
+        <g filter="url(#Rectángulo_6)" transform="translate(0 -6)">
+            <g id="Rectángulo_6-2" fill="none" stroke="rgba(112,112,112,0.08)" stroke-width="1.5px" transform="translate(0 6)">
+                <rect width="38" height="38" stroke="none" rx="19"/>
+                <rect width="36.5" height="36.5" x=".75" y=".75" rx="18.25"/>
+            </g>
+        </g>
+        <g id="Icono">
+            <path id="Línea_5" d="M0 20.819L20.819 0" class="cls-2" transform="translate(8.517 8.663)"/>
+            <path id="Línea_6" d="M0 0L20.819 20.819" class="cls-2" transform="translate(8.517 8.663)"/>
+        </g>
+    </g>
+</svg>

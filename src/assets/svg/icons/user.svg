@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+    <defs>
+        <style>
+            .cls-2{fill:transparent;stroke-width:2.5px;stroke:#1b69a6}
+        </style>
+    </defs>
+    <g id="House" transform="translate(1 1)">
+        <g id="House-2" transform="translate(-73.975 -1173.397)">
+            <g id="user" opacity="0.9" transform="translate(81.541 1178.443)">
+                <path id="Trazado_6" d="M139.464 1.814a6.193 6.193 0 1 1-8.758 0 6.193 6.193 0 0 1 8.758 0" class="cls-2" transform="translate(-124.245)"/>
+                <path id="Trazado_7" d="M52.557 293.987a17.2 17.2 0 0 0-19 0 3.07 3.07 0 0 0-1.338 2.556v5.366H53.9a40.992 40.992 0 0 0 0-5.366 4.994 4.994 0 0 0-1.343-2.556z" class="cls-2" transform="translate(-32.222 -278.627)"/>
+            </g>
+            <circle id="Elipse_4" cx="18.5" cy="18.5" r="18.5" fill="none" stroke="#1b69a6" stroke-width="2px" transform="translate(73.975 1173.397)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGOUT = 'LOGOUT';
+export const ADD_FAVORITES = 'ADD_FAVORITES';
+export const DELETE_FAVORITES = 'DELETE_FAVORITES';
+export const SET_FAVORITES = 'SET_FAVORITES';

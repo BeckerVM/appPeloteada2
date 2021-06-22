@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="envelope" width="135.541" height="131.048" viewBox="0 0 135.541 131.048">
+    <defs>
+        <style>
+            .cls-1{fill:#fbb03b}.cls-6{fill:#de841b}.cls-7{fill:#b3b3b3}
+        </style>
+    </defs>
+    <path id="Trazado_2959" d="M80.794 23.194l41.073 36.144v67.77H8.917v-67.77l40.662-35.783z" class="cls-1" transform="translate(2.378 3.94)"/>
+    <path id="Rectángulo_1803" fill="#29abe2" d="M0 0H22.59V9.036H0z" transform="translate(56.475 31.661)"/>
+    <path id="Trazado_2960" fill="#0071bc" d="M39.233 19.871a18.009 18.009 0 0 0 6.147 13.554h23.851a18.072 18.072 0 1 0-30-13.554z" transform="translate(10.465 -1.773)"/>
+    <circle id="Elipse_25" cx="4.518" cy="4.518" r="4.518" fill="#fff" transform="translate(63.252 9.07)"/>
+    <path id="Trazado_2961" fill="#f7931e" d="M8.917 115.692l56.475-49.7 56.475 49.7z" transform="translate(2.378 15.357)"/>
+    <g id="Grupo_2662" transform="translate(11.295 63.278)">
+        <path id="Trazado_2962" d="M106.238 51.727L67.512 85.418l38.726 34.08z" class="cls-6" transform="translate(6.713 -51.727)"/>
+        <path id="Trazado_2963" d="M8.917 51.727l38.726 33.691L8.917 119.5z" class="cls-6" transform="translate(-8.917 -51.727)"/>
+    </g>
+    <g id="Grupo_2663" transform="translate(0 45.14)">
+        <path id="Trazado_2964" d="M110.644 89.431h-4.518V52.049L93.338 40.8l2.986-3.389 13.554 11.928a2.254 2.254 0 0 1 .766 1.692z" class="cls-7" transform="translate(24.897 -37.408)"/>
+        <path id="Rectángulo_1804" d="M0 0H4.518V4.518H0z" class="cls-7" transform="translate(131.023 56.55)"/>
+        <path id="Rectángulo_1805" d="M0 0H4.518V36.144H0z" class="cls-7" transform="translate(0 40.737)"/>
+        <path id="Rectángulo_1806" d="M0 0H4.518V4.518H0z" class="cls-7" transform="translate(0 31.701)"/>
+    </g>
+    <g id="Grupo_2664" transform="translate(42.921 108.467)">
+        <path id="Rectángulo_1807" d="M0 0H49.698V4.518H0z" class="cls-1" transform="translate(0 9.036)"/>
+        <path id="Rectángulo_1808" d="M0 0H27.108V4.518H0z" class="cls-1" transform="translate(11.295)"/>
+    </g>
+    <path id="Trazado_2965" fill="#e6e6e6" d="M50.062 48.16a9.036 9.036 0 1 0 7.782 13.554H77.17v-9.036H63.616z" transform="translate(10.932 10.6)"/>
+    <path id="Trazado_2966" fill="#f15a24" d="M61.7 33.894V65.52h-5.768a9 9 0 0 1-7.782 4.518V33.894z" transform="translate(12.843 6.794)"/>
+</svg>

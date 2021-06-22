@@ -1,0 +1,22 @@
+<svg id="Grupo_38" data-name="Grupo 38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="650" height="490" viewBox="0 0 650 490">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset="0.656" stop-color="#000" stop-opacity="0.341"/>
+      <stop offset="0.874" stop-color="#000" stop-opacity="0.749"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_1654" data-name="Rectángulo 1654" width="650" height="490" fill="#003e73"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectángulo_1696" data-name="Rectángulo 1696" width="650" height="490" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_1" data-name="Enmascarar grupo 1" clip-path="url(#clip-path)">
+    <path id="Trazado_61" data-name="Trazado 61" d="M2967.733-1517.067s-16,86.4-114.133,94.933-87.2,124.8-232.267,213.333-326.4,19.2-355.2-48,0-192.533,0-192.533L2276.8-1623.2h690.933Z" transform="translate(-2299.066 1590)" fill="#003e73"/>
+  </g>
+  <g id="Enmascarar_grupo_2" data-name="Enmascarar grupo 2" opacity="0.53" clip-path="url(#clip-path-2)">
+    <path id="Trazado_107" data-name="Trazado 107" d="M2967.733-1517.067s-16,86.4-114.133,94.933-87.2,124.8-232.267,213.333-326.4,19.2-355.2-48,0-192.533,0-192.533L2276.8-1623.2h690.933Z" transform="translate(-2299.066 1590)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
