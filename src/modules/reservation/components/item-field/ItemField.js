@@ -104,6 +104,10 @@ const ItemField = ({
               nameBusiness,
               ...data,
               ...selectedDate,
+              discountDayPrice:
+                data.dayPrice - (data.dayPrice / 100) * data.discount,
+              discountNightPrice:
+                data.nightPrice - (data.nightPrice / 100) * data.discount,
             },
           })
         }>
@@ -121,40 +125,84 @@ const ItemField = ({
                 width: '100%',
                 justifyContent: 'center',
               }}>
-              <Text style={styles.textDiscount}>10% OFF</Text>
+              <Text style={styles.textDiscount}>{data.discount}% OFF</Text>
               <Text style={styles.textInfo}>{data.name}</Text>
               <Text style={styles.textInfo}>
                 <IconBall width={wp(4)} height={wp(4)} /> {data.size} vs{' '}
                 {data.size}
               </Text>
               <View style={styles.contentPrice}>
-                <Text
-                  style={[
-                    styles.textPrice,
-                    {
-                      backgroundColor: Colors.colorWhite,
-                      borderBottomLeftRadius: wp(2),
-                      borderTopLeftRadius: wp(2),
-                      fontSize: wp(3),
-                    },
-                  ]}>
-                   S/.{' '}
-                  {data.dayPrice.toFixed(2)}{' '}
-                </Text>
-                <Text
-                  style={[
-                    styles.textPrice,
-                    {
-                      backgroundColor: Colors.colorPrimary,
-                      color: Colors.colorWhite,
-                      borderTopRightRadius: wp(2),
-                      borderBottomRightRadius: wp(2),
-                      fontSize: wp(3)
-                    },
-                  ]}>
-                  S/.{' '}
-                  {data.nightPrice.toFixed(2)}
-                </Text>
+                <View
+                  style={{
+                    backgroundColor: Colors.colorWhite,
+                    borderBottomLeftRadius: wp(2),
+                    borderTopLeftRadius: wp(2),
+                    flex: 1,
+                    alignItems: 'center',
+                  }}>
+                  <IconSun width={wp(5)} height={wp(5)} />
+                  <View style={styles.containerPrice2}>
+                    <Text
+                      style={[
+                        {
+                          ...Typography.fontTextNormal,
+                          textDecorationLine: 'line-through',
+                          textDecorationStyle: 'solid',
+                          color: Colors.colorGray2,
+                        },
+                      ]}>
+                      S/. {data.dayPrice.toFixed(2)}{' '}
+                    </Text>
+                    <Text
+                      style={[
+                        {...Typography.fontTextNormal, fontSize: wp(2.5)},
+                      ]}>
+                      S/.{' '}
+                      {(
+                        data.dayPrice -
+                        (data.dayPrice / 100) * data.discount
+                      ).toFixed(2)}
+                    </Text>
+                  </View>
+                </View>
+
+                <View
+                  style={{
+                    backgroundColor: Colors.colorPrimary,
+                    borderBottomRightRadius: wp(2),
+                    borderTopRightRadius: wp(2),
+                    flex: 1,
+                    alignItems: 'center',
+                  }}>
+                  <IconMoon width={wp(4)} height={wp(4)} />
+                  <View style={styles.containerPrice2}>
+                    <Text
+                      style={[
+                        {
+                          ...Typography.fontTextNormal,
+                          textDecorationLine: 'line-through',
+                          textDecorationStyle: 'solid',
+                          color: Colors.colorWhite,
+                        },
+                      ]}>
+                      S/. {data.nightPrice.toFixed(2)}{' '}
+                    </Text>
+                    <Text
+                      style={[
+                        {
+                          ...Typography.fontTextNormal,
+                          color: Colors.colorWhite,
+                          fontSize: wp(2.5),
+                        },
+                      ]}>
+                      S/.{' '}
+                      {(
+                        data.nightPrice -
+                        (data.nightPrice / 100) * data.discount
+                      ).toFixed(2)}
+                    </Text>
+                  </View>
+                </View>
               </View>
             </View>
           ) : null}
@@ -212,7 +260,7 @@ const styles = StyleSheet.create({
     marginRight: wp(1),
   },
   fieldContainer: {
-    width: wp(60),
+    width: wp(65),
     height: wp(40),
     position: 'relative',
     borderRadius: wp(1.5),
@@ -256,11 +304,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: wp(5),
   },
+  containerPrice2: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: wp(1),
+  },
   textPrice: {
     ...Typography.fontTextNormal,
-    flex: 1,
-    padding: wp(1.5),
-    alignItems: 'center',
-    textDecorationLine: 'line-through', textDecorationStyle: 'solid'
   },
 });

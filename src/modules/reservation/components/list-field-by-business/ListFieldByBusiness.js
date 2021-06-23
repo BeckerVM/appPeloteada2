@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     paddingVertical: wp(2),
     paddingBottom: wp(4),
   },

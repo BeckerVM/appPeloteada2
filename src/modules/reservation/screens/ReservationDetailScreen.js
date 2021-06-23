@@ -54,8 +54,8 @@ const ReservationDetailScreen = ({route}) => {
         ? data.valueFinal.toString().replace('.5', ':30')
         : data.valueFinal.toString() + ':00',
       valueFinal: data.valueFinal,
-      dayPrice: data.dayPrice,
-      nightPrice: data.nightPrice,
+      dayPrice: data.discount > 0 ? data.discountDayPrice : data.dayPrice,
+      nightPrice: data.discount > 0 ? data.discountNightPrice : data.nightPrice,
       size: data.size,
       nameBusiness: data.nameBusiness,
       nameField: data.name,
@@ -63,15 +63,15 @@ const ReservationDetailScreen = ({route}) => {
     };
 
     if(data.valueInitial < 18 && data.valueFinal <= 18) {
-      updateData.totalPrice = (data.valueFinal - data.valueInitial) * data.dayPrice
+      updateData.totalPrice = (data.valueFinal - data.valueInitial) * updateData.dayPrice
     }
 
     if(data.valueInitial >= 18 && data.valueFinal > 18) {
-      updateData.totalPrice = (data.valueFinal - data.valueInitial) * data.nightPrice
+      updateData.totalPrice = (data.valueFinal - data.valueInitial) * updateData.nightPrice
     }
 
     if(data.valueInitial < 18 && data.valueFinal > 18) {
-      updateData.totalPrice  = ((18 - data.valueInitial) * data.dayPrice) + ((data.valueFinal - 18) * data.nightPrice)
+      updateData.totalPrice  = ((18 - data.valueInitial) * updateData.dayPrice) + ((data.valueFinal - 18) * updateData.nightPrice)
     }
 
     setDetail({

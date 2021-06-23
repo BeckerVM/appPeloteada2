@@ -25,7 +25,7 @@ const ListField = ({data, noMargin, selectedDate}) => {
 
       <Text style={styles.textAddress}>{data.address}</Text>
       <Text style={styles.subTitle}>
-        {data.count} {data.count > '1' ? 'Canchas' : 'Cancha'} disponible
+        {data.count} {data.count > '1' ? 'Canchas' : 'Cancha'} disponible(s)
       </Text>
       <FlatList
         showsHorizontalScrollIndicator={false}

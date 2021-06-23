@@ -66,6 +66,7 @@ const BusinessScreen = ({route}) => {
               fontSize: wp(7),
               textAlign: 'center',
               color: Colors.colorGray2,
+              width: wp(70)
             }}>
             {nameBusiness}
           </Text>

@@ -36,7 +36,7 @@ const Header = ({title}) => {
           style={{
             ...Typography.fontTextNormal,
             color: Colors.colorWhite,
-            fontSize: wp(5),
+            fontSize: wp(4)
           }}>
           {title}
         </Text>

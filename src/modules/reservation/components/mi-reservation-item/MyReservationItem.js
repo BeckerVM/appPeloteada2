@@ -9,6 +9,8 @@ import IconCalendar from '../../../../assets/svg/icons/calendar3.svg';
 import IconCronometer from '../../../../assets/svg/icons/cronometer.svg';
 
 const MyReservationItem = ({data, index}) => {
+  console.log(data)
+
   return (
     <View
       style={[styles.container, index === 0 ? {marginTop: wp(4)} : null]}>
@@ -62,6 +64,8 @@ const MyReservationItem = ({data, index}) => {
             </Text>
           </View>
         </View>
+        <Text style={{ alignSelf: 'center',
+            ...Typography.fontTextNormal, fontSize: wp(3.5),  ...Spacing.marginTopXm,}}>Precio: S/. {data.total.toFixed(2)}</Text>
         <Text
           style={{
             alignSelf: 'center',
