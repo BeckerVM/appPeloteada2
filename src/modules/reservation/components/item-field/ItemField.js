@@ -75,7 +75,6 @@ const ItemField = ({
         payload: data._id,
       });
     } catch (error) {
-      console.log(error.response.data);
     }
   };
 

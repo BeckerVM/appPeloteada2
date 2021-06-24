@@ -9,8 +9,6 @@ import IconCalendar from '../../../../assets/svg/icons/calendar3.svg';
 import IconCronometer from '../../../../assets/svg/icons/cronometer.svg';
 
 const MyReservationItem = ({data, index}) => {
-  console.log(data)
-
   return (
     <View
       style={[styles.container, index === 0 ? {marginTop: wp(4)} : null]}>

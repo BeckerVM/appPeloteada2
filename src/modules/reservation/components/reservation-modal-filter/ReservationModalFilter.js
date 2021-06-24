@@ -110,8 +110,6 @@ const ReservationModalFilter = ({
       let hourRange;
       let hourInitial;
 
-      console.log(selectHour);
-
       filterDays.forEach((f) => {
         if (f.selected) {
           if (currentDate.dayN !== f.dayN) {
