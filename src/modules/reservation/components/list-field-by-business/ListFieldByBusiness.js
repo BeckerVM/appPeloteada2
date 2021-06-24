@@ -6,7 +6,6 @@ import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
 import ItemField from '../item-field/ItemField';
 
 const ListFieldByBusiness = ({
-  data,
   selectedDate,
   fieldsByBusiness,
   nameBusiness,
@@ -19,6 +18,7 @@ const ListFieldByBusiness = ({
       <View style={styles.container}>
         {fieldsByBusiness.map((f, index) => (
           <ItemField
+            resize={true}
             noMargin={false}
             key={f._id}
             idBusiness={idBusiness}

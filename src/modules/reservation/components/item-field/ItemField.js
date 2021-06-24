@@ -34,6 +34,7 @@ const ItemField = ({
   noMargin = false,
   favorites,
   dispatch,
+  resize = false
 }) => {
   const navigation = useNavigation();
   const [disabled, setDisabled] = React.useState(false);
@@ -52,6 +53,7 @@ const ItemField = ({
             profileUrl: data.profileUrl,
             dayPrice: data.dayPrice,
             nightPrice: data.nightPrice,
+            discount: data.discount
           },
           business: {
             _id: idBusiness,
@@ -112,7 +114,7 @@ const ItemField = ({
           })
         }>
         <ImageBackground
-          style={styles.fieldContainer}
+          style={[styles.fieldContainer, resize ? { width: wp(90), height: wp(48)} : null]}
           source={{
             uri: data.profileUrl,
           }}>
@@ -120,7 +122,7 @@ const ItemField = ({
             <View
               style={{
                 alignItems: 'center',
-                backgroundColor: 'rgba(0, 0, 0, .5)',
+                backgroundColor: 'rgba(0, 0, 0, .4)',
                 height: '100%',
                 width: '100%',
                 justifyContent: 'center',

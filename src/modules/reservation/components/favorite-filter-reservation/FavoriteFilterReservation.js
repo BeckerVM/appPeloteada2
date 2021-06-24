@@ -17,6 +17,7 @@ import reservationServices from '../../../../services/reservationServices';
 import {SET_LOADING} from '../../../../redux/constants/loadingConstants';
 
 const FavoriteFilterReservation = ({
+  discount,
   filterModalDays,
   currentDate,
   selectedDate,
@@ -24,6 +25,8 @@ const FavoriteFilterReservation = ({
   loaded,
   dispatch,
   data2,
+  discountNightPrice,
+  discountDayPrice
 }) => {
   const [filterDays, setFilterDays] = useState([]);
   const [filterHours, setFilterHours] = useState([]);
@@ -253,7 +256,10 @@ const FavoriteFilterReservation = ({
 
           <TouchableOpacity
             onPress={() => navigation.navigate('ReservationDetail', {data: {
-              ...detail
+              ...detail,
+              discountDayPrice,
+              discountNightPrice,
+              discount
             }})}
             disabled={!disabled}
             style={[
@@ -280,6 +286,9 @@ FavoriteFilterReservation.propTypes = {
   courtId: PropTypes.string,
   loaded: PropTypes.bool,
   data2: PropTypes.object,
+  discountNightPrice: PropTypes.number,
+  discountDayPrice: PropTypes.number,
+  discount: PropTypes.number
 };
 
 const mapStateToProps = (state) => {

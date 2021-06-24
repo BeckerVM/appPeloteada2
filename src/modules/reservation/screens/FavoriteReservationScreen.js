@@ -10,7 +10,7 @@ import FavoriteFilterReservation from '../components/favorite-filter-reservation
 
 const FavoriteReservationScreen = ({route}) => {
   const {currentDate, filterModalDays, selectedDate} = useFilterReservation();
-  const {data} = route.params;
+  const {data, discountDayPrice, discountNightPrice, discount} = route.params;
   const {showBar} = useStatusBar();
 
   return (
@@ -29,6 +29,9 @@ const FavoriteReservationScreen = ({route}) => {
         selectedDate={selectedDate}
         courtId={data.court._id}
         data2={data}
+        discountDayPrice={discountDayPrice}
+        discountNightPrice={discountNightPrice}
+        discount={discount}
       />
     </View>
   );
