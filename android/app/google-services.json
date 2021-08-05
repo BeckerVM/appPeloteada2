@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "20629049196",
+    "project_id": "peloteada-ec4a1",
+    "storage_bucket": "peloteada-ec4a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20629049196:android:03ddaff1ac0027a09d2d49",
+        "android_client_info": {
+          "package_name": "com.peloteada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20629049196-eceno0pe3g1i0p435fvn5p7uh15rfnov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.peloteada",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "20629049196-olfbe83ccr1tn15o2a9o2t99phqd8h3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.peloteada",
+            "certificate_hash": "f482da24d3fd0c19c089c42778282f950812c327"
+          }
+        },
+        {
+          "client_id": "20629049196-7o93e0n31mqq433nq7jlduib3dkl2di3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWtIxEUwwovlowqHsbMumh7YuxYb9mnss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20629049196-7o93e0n31mqq433nq7jlduib3dkl2di3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -132,7 +132,7 @@ const RegisterForm = function ({navigation, dispatch, loaded}) {
                 <RectButton
                   style={{...Spacing.marginBottomLg}}
                   onPress={() => {
-                    let url = 'https://peloteada.com/terminos';
+                    let url = 'https://www.peloteada.com/terminos';
                     linkinApp(url);
                   }}>
                   <Text style={[styles.textCondition]}>
